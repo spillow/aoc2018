@@ -14,7 +14,7 @@ day01a = putStrLn "day01a:" >> getNumList >>= print . sum
 
 day01b :: IO ()
 day01b = do
-    putStrLn "day01b:"
+    putStrLn "day01b"
     nums <- getNumList
     let freqs = scanl (+) 0 $ cycle nums
     print $ go S.empty freqs
